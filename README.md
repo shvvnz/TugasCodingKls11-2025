@@ -10,3 +10,5 @@ Cara menentukan jumlah & harga ubin untuk sebuah ruangan
 6. Masukkan harga ubin/m^2
 7. Klik "hitung", lalu akan muncul jumlah & harga ubin 
 8. Lalu di bagian bawah klian akan menemukan bbrp rekomendasi supplier ubin
+
+Rumus : [(panjang * lebar ruangan) / (panjang * lebar ubin)] * harga ubin

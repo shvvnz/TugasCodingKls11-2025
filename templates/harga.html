@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Input Harga Ubin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Masukkan Harga Per Ubin (Rp)</h1>
+    <form method="POST">
+        <label>Harga per Ubin:</label><br>
+        <input type="number" step="any" name="harga_per_ubin" required><br><br>
+        <button type="submit">Hitung</button>
+    </form>
+</body>
+</html>

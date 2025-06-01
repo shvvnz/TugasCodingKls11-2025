@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Ubin Lantai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Kalkulator Jumlah dan Harga Ubin</h1>
+    <form action="/hasil" method="POST">
+        <h3>Ukuran Ruangan</h3>
+        <label>Panjang (m):</label><br>
+        <input type="number" step="any" name="panjang_ruangan" required><br>
+        <label>Lebar (m):</label><br>
+        <input type="number" step="any" name="lebar_ruangan" required><br><br>
+
+        <h3>Ukuran Ubin</h3>
+        <label>Panjang (m):</label><br>
+        <input type="number" step="any" name="panjang_ubin" required><br>
+        <label>Lebar (m):</label><br>
+        <input type="number" step="any" name="lebar_ubin" required><br><br>
+
+        <h3>Harga</h3>
+        <label>Harga per ubin (Rp):</label><br>
+        <input type="number" step="any" name="harga_per_ubin" required><br><br>
+
+        <button type="submit">Hitung</button>
+    </form>
+</body>
+</html>

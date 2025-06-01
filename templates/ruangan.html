@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Input Ukuran Ruangan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Masukkan Ukuran Ruangan (meter)</h1>
+    <form method="POST">
+        <label>Panjang Ruangan:</label><br>
+        <input type="number" step="any" name="panjang_ruangan" required><br><br>
+        <label>Lebar Ruangan:</label><br>
+        <input type="number" step="any" name="lebar_ruangan" required><br><br>
+        <button type="submit">Lanjutkan ke Ukuran Ubin</button>
+    </form>
+</body>
+</html>

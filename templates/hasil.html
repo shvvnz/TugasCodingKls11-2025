@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hasil Perhitungan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hasil Perhitungan</h1>
+    <p><strong>Jumlah ubin yang dibutuhkan:</strong> {{ jumlah_ubin }} buah</p>
+    <p><strong>Total biaya:</strong> Rp {{ "{:,.2f}".format(total_harga) }}</p>
+    <a href="{{ url_for('ruangan') }}">Hitung ulang</a>
+
+    <hr style="margin: 40px 0;">
+
+    <h2>Rekomendasi Toko/Supplier Ubin</h2>
+    <div class="supplier-grid">
+    <div class="supplier">
+        <strong>Toko Bangunan Sejahtera</strong><br>
+        📍 Jl. Merpati No. 45, Bandung<br>
+        📞 0812-3456-7890<br>
+        🔗 <a href="https://maps.app.goo.gl/Xx123abc" target="_blank">Google Maps</a>
+    </div>
+    <div class="supplier">
+        <strong>UD Sumber Rejeki Ubin</strong><br>
+        📍 Jl. Raya Cibiru No. 10, Bandung<br>
+        📞 0896-1234-5678<br>
+        🔗 <a href="https://instagram.com/sumberubin" target="_blank">Instagram</a>
+    </div>
+    <div class="supplier">
+        <strong>CV Ubin Ceria</strong><br>
+        📍 Jl. Soekarno-Hatta No. 77, Cimahi<br>
+        📞 0821-9876-5432<br>
+        🔗 <a href="https://ubinceria.co.id" target="_blank">Website Resmi</a>
+    </div>
+    <div class="supplier">
+        <strong>Toko Ubin Modern</strong><br>
+        📍 Jl. Jakarta No. 12, Bandung<br>
+        📞 0813-5555-2222<br>
+        🔗 <a href="https://maps.app.goo.gl/Yy456def" target="_blank">Google Maps</a>
+    </div>
+    <div class="supplier">
+        <strong>UD Lantai Indah</strong><br>
+        📍 Jl. Dipatiukur No. 88, Bandung<br>
+        📞 0852-3333-1122<br>
+        🔗 <a href="https://instagram.com/udlantaiindah" target="_blank">Instagram</a>
+    </div>
+    <div class="supplier">
+        <strong>Raja Keramik</strong><br>
+        📍 Jl. Dago No. 15, Bandung<br>
+        📞 0822-6666-9988<br>
+        🔗 <a href="https://rajakramik.com" target="_blank">Website</a>
+    </div>
+    <div class="supplier">
+        <strong>Ubin Lux Bandung</strong><br>
+        📍 Jl. Cibaduyut No. 9, Bandung<br>
+        📞 0819-8888-7777<br>
+        🔗 <a href="https://instagram.com/ubinluxbdg" target="_blank">Instagram</a>
+    </div>
+    <div class="supplier">
+        <strong>Toko Mitra Lantai</strong><br>
+        📍 Jl. Gatot Subroto No. 19, Bandung<br>
+        📞 0831-1122-3344<br>
+        🔗 <a href="https://maps.app.goo.gl/Zz789ghi" target="_blank">Google Maps</a>
+    </div>
+    <div class="supplier">
+        <strong>Keramik Nusantara</strong><br>
+        📍 Jl. Cihampelas No. 45, Bandung<br>
+        📞 0877-4444-1234<br>
+        🔗 <a href="https://keramiknusantara.id" target="_blank">Website Resmi</a>
+    </div>
+    </div>
+
+</body>
+</html>
